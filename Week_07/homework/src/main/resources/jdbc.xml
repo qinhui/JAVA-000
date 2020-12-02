@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+
+
+    <bean id="mySqlJdbcPram" class="com.jkdx.homework.db.ConnectionPrams">
+
+        <property name="dbname" value="db"></property>
+        <property name="dbpassword" value=""></property>
+        <property name="driverName" value="com.mysql.jdbc.Driver"></property>
+        <property name="dbuser" value="root"></property>
+        <property name="dbport" value="3306"></property>
+        <property name="maximumPoolSize" value="5"></property>
+        <property name="serverName" value="127.0.0.1" />
+
+    </bean>
+
+
+
+    <bean id="mySqlJdbcPram_" class="com.jkdx.homework.db.ConnectionPrams">
+
+        <property name="dbname" value="db"></property>
+        <property name="dbpassword" value=""></property>
+        <property name="driverName" value="com.mysql.jdbc.Driver"></property>
+        <property name="dbuser" value="root"></property>
+        <property name="dbport" value="3307"></property>
+        <property name="maximumPoolSize" value="5"></property>
+        <property name="serverName" value="127.0.0.1" />
+
+    </bean>
+
+
+
+</beans>
